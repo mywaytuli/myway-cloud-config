@@ -7,6 +7,10 @@ spring:
     password: root
     continue-on-error: true
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    config:
+      override-none: true
+
 zipkin:
   storage:
     type: mysql
