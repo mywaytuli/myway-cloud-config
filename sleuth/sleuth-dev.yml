@@ -1,5 +1,5 @@
 server:
-  port: 9410
+  port: 9411
 spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/zipkin?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
@@ -10,6 +10,11 @@ spring:
   cloud:
     config:
       override-none: true
+  rabbitmq:
+    host: 118.25.41.200
+    port: 5672
+    username: guest
+    password: guest
 
 zipkin:
   storage:
